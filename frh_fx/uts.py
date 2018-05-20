@@ -27,3 +27,8 @@ def export_surface(k,t,σ):
     print('Exported to:',os.path.join(os.getcwd()))
     os.chdir(cwd)
 # try exporting data and plots
+def get_drift(Θ):
+    α,β,δ = Θ
+    γ = np.sqrt(α**2 - β**2)
+    μ = - δ*(γ - np.sqrt(α**2 - (β + 1)**2))
+    return μ
