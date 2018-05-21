@@ -7,5 +7,5 @@ The key contribution here is an implementation of a dependence structure between
 
 An example jupyter notebook is included which demonstrate usage. Tested with Python 3.5.2 and macOS Sierra 10.12.5.
 
-<img src="plots/surface-1.png" width="350"> <img src="plots/surface-2.png" width="350">
-<img src="plots/surface-3.png" width="350"> <img src="plots/surface-4.png" width="350">
+<img src="plots/surface-1.pdf" width="350"> <img src="plots/surface-2.pdf" width="350">
+<img src="plots/surface-3.pdf" width="350"> <img src="plots/surface-4.pdf" width="350">
