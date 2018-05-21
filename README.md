@@ -1,5 +1,4 @@
 # Fast-reversion Heston FX
-==========================
 
 This repo contains code for the fast-reversion Heston (FRH) model of [Mechkov, 2015](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2418631), which is a reparameterisation of the normal-inverse Gaussian (NIG) process, studied greatly by Barndorff-Nielsen, among others. In particular, one can produce implied volatility surfaces analytically (fourier transform), and verify them by simulation.
 
