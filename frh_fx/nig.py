@@ -64,14 +64,14 @@ def ft_price(k,Θ,t,u=np.inf):
     """
     p = 1 - 1/2/np.pi*np.exp(k/2)*quad(ft_integrand,-u,u,args=(k,Θ,t))[0]
     return p
-def price(k,Θ,t):
+def price(k,T,Θ):
     """
     k.shape = (n,m) : log-strike
     Θ.shape = (n,3) : nig params
     u : integral limits
     """
     m,n = k.shape
-    p = [[ft_price(k[i,j],Θ,t[i]) for j in range(n)] for i in range(m)]
+    p = [[ft_price(k[i,j],Θ,T[i]) for j in range(n)] for i in range(m)]
     return np.array(p)
 def pdf(x,Θ):
     """

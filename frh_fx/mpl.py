@@ -1,4 +1,5 @@
 from matplotlib import pyplot as plt
+from cycler import cycler
 def config(scale=1.5,print_keys='False'):
 
     plt.rcParams['figure.figsize'] = [3,3*9/16]
@@ -33,6 +34,9 @@ def config(scale=1.5,print_keys='False'):
 
     plt.rcParams['xtick.major.size'] = 0
     plt.rcParams['ytick.major.size'] = 0
+
+    plt.rcParams['axes.prop_cycle'] = cycler(color=['r','coral','gold',
+                                          'g','b','indigo','violet'])
 
     if print_keys:
         print(plt.rcParams.keys())

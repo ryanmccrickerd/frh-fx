@@ -57,12 +57,12 @@ def vol(k,t,p):
 #     n = len(t)
 #     σ = [bs_vols(k[i,:],t[i],p[i,:]) for i in range(n)]
 #     return np.array(σ)
-def surface(k,t,p):
+def surface(k,T,p):
     """
     k.shape = (m,n) : log-strikes
     t.shape = (m,) : years to maturity
     p.shape = (m,n) : option prices
     """
     m,n = k.shape
-    σ = [[vol(k[i,j],t[i],p[i,j]) for j in range(n)] for i in range(m)]
+    σ = [[vol(k[i,j],T[i],p[i,j]) for j in range(n)] for i in range(m)]
     return np.array(σ)
