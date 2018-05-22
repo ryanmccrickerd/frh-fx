@@ -37,6 +37,14 @@ def cross_params(θ1,θ2,ρ):
     μ3 = - δ3*(γ3 - np.sqrt(α3**2 - (β3 + 1)**2))
     return α3,β3,δ3,μ3
 
+def inverse_params(θ1):
+    α1,β1,δ1 = θ1
+    α0,δ0 = α1,δ1
+    β0 = - (β1 + 1)
+    γ0 = np.sqrt(α0**2 - β0**2)
+    μ0 = - δ0*(γ0 - np.sqrt(α0**2 - (β0 + 1)**2))
+    return α0,β0,δ0,μ0
+
 def char_func(p,Θ,t):
     """
     p.shape = () : cmplx value
