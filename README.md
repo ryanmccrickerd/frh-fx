@@ -5,12 +5,15 @@ This repo contains code for the fast-reversion Heston (FRH) model of [Mechkov, 2
 The key contribution here is an implementation of a simple dependence structure between multiple FRH models, as well as the measure change analytics required to consistently evaluate inverse and cross process. We provide a very simple simulation procedure, amenable to quasi-random sampling, and expose some very interesting volatility surface symmetries exhibited by this model.
 
 Cross symmetry:
+
 <img src="plots/surface-1.png" width="350"> <img src="plots/surface-2.png" width="350">
 
 Sample paths:
+
 <img src="plots/paths-1.png" width="350"> <img src="plots/paths-2.png" width="350">
 
 Delta symmetry:
+
 <img src="plots/surface-3.png" width="350"> <img src="plots/surface-4.png" width="350">
 
 Example jupyter notebooks are included which demonstrate usage. Tested with Python 3.5.2 and macOS Sierra 10.12.5.
