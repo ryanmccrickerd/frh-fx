@@ -62,12 +62,13 @@ def convert_deltas(T,Δ,σ):
     k = 0.5*σ**2*T - d1*σ*np.sqrt(T)
     return k
 
-def import_data(currency,date):
+def import_data(date,currency,quote):
     """
     Function for importing Bloomberg FX volatility data from a csv file for
     a given date. Currency should be passed as 'GBPUSD' and date as '2017-01-31'.
     """
-    df = pd.read_csv('data/'+date+'-'+currency+'.csv',header=None)
+    filename = os.path.join('data','market-'+date,currency+'-'+quote+'.csv')
+    df = pd.read_csv(filename,header=None)
     T = np.array(df.loc[1:,0]).astype(float)
     Δ = np.array(df.loc[0,1:]).astype(float)/100
     σ = np.array(df.loc[1:,1:]).astype(float)/100

@@ -16,4 +16,9 @@ Delta symmetry:
 
 <img src="plots/surface-3.png" width="350"> <img src="plots/surface-4.png" width="350">
 
+Market comparison:
+
+<img src="plots/market-1.png" width="233"> <img src="plots/market-2.png" width="233"> <img src="plots/market-3.png" width="233">
+<img src="plots/market-4.png" width="233"> <img src="plots/market-5.png" width="233"> <img src="plots/market-6.png" width="233">
+
 Example jupyter notebooks are included which demonstrate usage. Tested with Python 3.5.2 and macOS Sierra 10.12.5.
